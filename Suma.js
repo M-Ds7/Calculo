@@ -4,11 +4,11 @@ function calcularSerie() {
     const cantidadTerminos = parseInt(document.getElementById("cantidadTerminos").value);
 
     let suma = numeroInicial;
-    let resultados = "";
+    let resultados = 0;
 
-    for (let i = 1; i < cantidadTerminos; i++) {
+    for (let i = 1; i <= cantidadTerminos; i++) {
+        resultados = resultados +suma;
         suma += razon;
-        resultados += suma + "<br>";
     }
 
     document.getElementById("resultados").innerHTML = resultados;

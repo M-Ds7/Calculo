@@ -4,11 +4,11 @@ function calcularSerie() {
     const enesimoNumero = parseInt(document.getElementById("enesimoNumero").value);
 
     let multiplicacion = numeroInicial;
-    let resultados = "";
+    let resultados = 0;
 
-    for (let i = 1; i < enesimoNumero; i++) {
+    for (let i = 1; i <= enesimoNumero; i++) {
+        resultados = resultados + multiplicacion;
         multiplicacion *= razon;
-        resultados += multiplicacion + "<br>";
     }
 
     document.getElementById("resultados").innerHTML = resultados;
