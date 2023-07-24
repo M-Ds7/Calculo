@@ -6,7 +6,7 @@ function calcularSerie() {
     let multiplicacion = numeroInicial;
     let resultados = "";
 
-    for (let i = 1; i <= enesimoNumero; i++) {
+    for (let i = 1; i < enesimoNumero; i++) {
         multiplicacion *= razon;
         resultados += multiplicacion + "<br>";
     }

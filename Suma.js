@@ -6,7 +6,7 @@ function calcularSerie() {
     let suma = numeroInicial;
     let resultados = "";
 
-    for (let i = 1; i <= cantidadTerminos; i++) {
+    for (let i = 1; i < cantidadTerminos; i++) {
         suma += razon;
         resultados += suma + "<br>";
     }
